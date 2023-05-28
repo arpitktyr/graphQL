@@ -1,0 +1,38 @@
+####
+POST http://localhost:8080/graphql/
+Content-Type: application/json
+
+{"query": "{ hello {text views }}"}
+
+
+#exapmle for send GraphQl quries
+
+# POST https://api.github.com/graphql
+# Content-Type: application/json
+# Authorization: Bearer xxx
+# X-REQUEST-TYPE: GraphQL
+
+# query ($name: String!, $owner: String!) {
+#   repository(name: $name, owner: $owner) {
+#     name
+#     fullName: nameWithOwner
+#     description
+#     diskUsage
+#     forkCount
+#     stargazers(first: 5) {
+#         totalCount
+#         nodes {
+#             login
+#             name
+#         }
+#     }
+#     watchers {
+#         totalCount
+#     }
+#   }
+# }
+
+# {
+#     "name": "vscode-restclient",
+#     "owner": "Huachao"
+# }
